@@ -4734,8 +4734,8 @@ var Viewer = function Viewer(_ref4) {
             onload: function onload(event) {
                 var parent = event.path[1];
                 var img = event.target;
-                parent.style.width = img.naturalWidth / 2 + 'px';
-                parent.style.height = img.naturalHeight / 2 + 'px';
+                parent.style.width = img.naturalWidth / 3 + 'px';
+                parent.style.height = img.naturalHeight / 3 + 'px';
             }
         })
     );
