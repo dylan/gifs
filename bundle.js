@@ -4747,7 +4747,7 @@ app({
         "items": [],
         "filter": null,
         "sortFunction": sortDate,
-        "sort": SortOrder.Asc,
+        "sort": SortOrder.Desc,
         "hoveredItem": null
     },
 
