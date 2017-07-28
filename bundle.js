@@ -4729,10 +4729,11 @@ var Viewer = function Viewer(_ref4) {
     var item = _ref4.item;
     return h(
         'viewer',
-        { 'class': item ? 'active' : null },
-        h('img', { src: item ? 'http://' + params.Bucket + '/' + item.name : null,
+        { key: 'imgViewer', 'class': item ? 'active' : null },
+        h('img', { key: 'img',
+            src: item ? 'http://' + params.Bucket + '/' + item.name : '',
             onload: function onload(event) {
-                var parent = event.path[1];
+                var parent = event.target.parentElement;
                 var img = event.target;
                 parent.style.width = img.naturalWidth / 3 + 'px';
                 parent.style.height = img.naturalHeight / 3 + 'px';

@@ -56,10 +56,11 @@ const ListItem = ({item, hovered, actions}) => (
 )
 
 const Viewer = ({item}) => (
-    <viewer class={ item ? `active` : null }>
-        <img src={item ? `http://${params.Bucket}/${item.name}` : null}
+    <viewer key='imgViewer' class={ item ? `active` : null }>
+        <img key='img'
+             src={item ? `http://${params.Bucket}/${item.name}` : ''}
              onload={ event => {
-                let parent = event.path[1]
+                let parent = event.target.parentElement
                 let img = event.target
                 parent.style.width = `${img.naturalWidth/3}px`
                 parent.style.height = `${img.naturalHeight/3}px`
