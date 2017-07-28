@@ -79,7 +79,6 @@ app({
     },
 
     view: (state, actions) => {
-        console.log(state.sortFunction, state.sort)
         const items = state.items
                         .sort((a, b) => state.sortFunction(state.sort, a, b))
                         .filter(item => !filteredItems.includes(item.name.toLowerCase()))
