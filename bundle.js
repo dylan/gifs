@@ -4747,11 +4747,12 @@ app({
         "items": [],
         "filter": null,
         "sortFunction": sortDate,
-        "sort": SortOrder.Asc,
+        "sort": SortOrder.Desc,
         "hoveredItem": null
     },
 
     view: function view(state, actions) {
+        console.log(state.sortFunction, state.sort);
         var items = state.items.sort(function (a, b) {
             return state.sortFunction(state.sort, a, b);
         }).filter(function (item) {
