@@ -61,8 +61,8 @@ const Viewer = ({item}) => (
              onload={ event => {
                 let parent = event.path[1]
                 let img = event.target
-                parent.style.width = `${img.naturalWidth/2}px`
-                parent.style.height = `${img.naturalHeight/2}px`
+                parent.style.width = `${img.naturalWidth/3}px`
+                parent.style.height = `${img.naturalHeight/3}px`
              }}
         />
     </viewer>
@@ -88,8 +88,8 @@ app({
 
         return (
             <main>
-
                 <Viewer  item={state.hoveredItem} />
+
                 <input placeholder='Search...' type='text' oninput={ actions.search }/>
 
                 <table class='sortTable'>
