@@ -4752,7 +4752,6 @@ app({
     },
 
     view: function view(state, actions) {
-        console.log(state.sortFunction, state.sort);
         var items = state.items.sort(function (a, b) {
             return state.sortFunction(state.sort, a, b);
         }).filter(function (item) {
