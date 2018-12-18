@@ -84,7 +84,8 @@ app({
                         .filter(item => !filteredItems.includes(item.name.toLowerCase()))
                         .filter(item => {
                             if(!state.filter) return true
-                            return item.name.match(state.filter)
+                            const searchTerm = new RegExp(state.filter, 'i')
+                            return item.name.match(searchTerm)
                         })
 
         return (
