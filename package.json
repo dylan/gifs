@@ -10,21 +10,23 @@
   "license": "ISC",
   "devDependencies": {
     "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-es2015-rollup": "^3.0.0",
     "hyperapp": "^0.10.0",
     "livereload": "^0.6.2",
-    "rollup": "^0.45.1",
-    "rollup-plugin-babel": "^2.7.1",
+    "rollup": "^0.68.1",
+    "rollup-plugin-babel": "^4.1.0",
     "rollup-plugin-commonjs": "^8.0.2",
     "rollup-plugin-livereload": "^0.4.0",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-serve": "^0.4.0",
+    "rollup-plugin-terser": "^3.0.0",
     "rollup-plugin-uglify": "^2.0.1",
     "unfetch": "^3.0.0"
   },
   "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel": "^6.23.0",
     "moment": "^2.18.1",
-    "rollup-plugin-json": "^2.3.0",
     "rollup-watch": "^4.3.1"
   }
 }
